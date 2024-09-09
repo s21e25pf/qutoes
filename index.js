@@ -7,7 +7,7 @@ import { life } from './quotes/life.js';
 
 
 const app = express();
-app.use(cors())
+app.use(cors("*"))
 
 app.get("/", (req, res) => {
     const category = req.query.category;
